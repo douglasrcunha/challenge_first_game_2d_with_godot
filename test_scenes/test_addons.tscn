@@ -1,0 +1,231 @@
+[gd_scene load_steps=25 format=3 uid="uid://cuvwjoxusmjr2"]
+
+[ext_resource type="Texture2D" uid="uid://d0il6ahtsqmlw" path="res://addons/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_bre7v"]
+[ext_resource type="PackedScene" uid="uid://csn72r1fjuamn" path="res://player/player.tscn" id="2_ns3ar"]
+[ext_resource type="Texture2D" uid="uid://nqrm5bb7i1xd" path="res://addons/Factions/Knights/Troops/Pawn/Red/Pawn_Red.png" id="3_kenj2"]
+[ext_resource type="Texture2D" uid="uid://bw3wccggpek3k" path="res://addons/Resources/Resources/G_Idle.png" id="7_u4h6m"]
+[ext_resource type="Texture2D" uid="uid://drp3qgobpu0u4" path="res://addons/Resources/Resources/G_Spawn.png" id="8_txy1g"]
+[ext_resource type="Texture2D" uid="uid://cth3eypvx36uj" path="res://addons/Resources/Resources/M_Idle.png" id="9_0bug3"]
+[ext_resource type="Texture2D" uid="uid://mny7jc75m6mp" path="res://addons/Resources/Resources/M_Spawn.png" id="10_bl3jb"]
+[ext_resource type="Texture2D" uid="uid://caklr2iu70v8g" path="res://addons/UI/Banners/Banner_Connection_Down.png" id="11_mf773"]
+[ext_resource type="Texture2D" uid="uid://1u2f8k6mo6mn" path="res://addons/Resources/Resources/W_Idle.png" id="11_twhvk"]
+[ext_resource type="Texture2D" uid="uid://b71qgpr2yadjc" path="res://addons/UI/Banners/Banner_Connection_Left.png" id="12_6didj"]
+[ext_resource type="Texture2D" uid="uid://cuiqjjredas15" path="res://addons/Resources/Resources/W_Spawn.png" id="12_tfdef"]
+[ext_resource type="Texture2D" uid="uid://d3w5aqguonq0a" path="res://addons/UI/Banners/Banner_Connection_Right.png" id="13_eanry"]
+[ext_resource type="PackedScene" uid="uid://4pqy3whmxd63" path="res://misc/big_skull.tscn" id="13_s3gtj"]
+[ext_resource type="Texture2D" uid="uid://bjvgnmaa60suj" path="res://addons/UI/Banners/Banner_Connection_Up.png" id="14_ow4wr"]
+[ext_resource type="Texture2D" uid="uid://0f4a4gf4t2lt" path="res://addons/UI/Banners/Banner_Horizontal.png" id="15_wri1y"]
+[ext_resource type="Texture2D" uid="uid://cbpi2ys01vl24" path="res://addons/UI/Banners/Banner_Vertical.png" id="16_r1pu7"]
+[ext_resource type="Texture2D" uid="uid://b7iidgtmnbudd" path="res://addons/UI/Banners/Carved_3Slides.png" id="17_04xud"]
+[ext_resource type="Texture2D" uid="uid://cn1mqnthm1153" path="res://addons/UI/Banners/Carved_9Slides.png" id="18_qhl3u"]
+[ext_resource type="Texture2D" uid="uid://bgi02ls3ctjee" path="res://addons/UI/Banners/Carved_Regular.png" id="19_m4crb"]
+[ext_resource type="Texture2D" uid="uid://cgn6hxdim03vg" path="res://addons/UI/Ribbons/Ribbon_Red_3Slides.png" id="20_eorjy"]
+[ext_resource type="Texture2D" uid="uid://bxp3m4xaef23i" path="res://addons/UI/Ribbons/Ribbon_Blue_3Slides.png" id="21_irupj"]
+[ext_resource type="Texture2D" uid="uid://hmwy63v768rp" path="res://addons/UI/Ribbons/Ribbon_Yellow_3Slides.png" id="22_m5jm2"]
+[ext_resource type="PackedScene" uid="uid://kutfp5k8anww" path="res://enemies/goblin.tscn" id="23_ihv5i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k0lgf"]
+line_spacing = 24.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorBlue" type="Sprite2D" parent="."]
+position = Vector2(1456, 341)
+scale = Vector2(0.372396, 0.408854)
+texture = ExtResource("1_bre7v")
+
+[node name="Label" type="Label" parent="WarriorBlue"]
+offset_left = 686.098
+offset_top = -701.962
+offset_right = 738.098
+offset_bottom = -678.962
+scale = Vector2(3.08414, 2.28932)
+text = "idle
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="WarriorBlue"]
+offset_left = 688.783
+offset_top = -518.522
+offset_right = 746.783
+offset_bottom = -469.522
+scale = Vector2(3.08414, 2.28932)
+text = "run
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="WarriorBlue"]
+offset_left = 691.468
+offset_top = -315.516
+offset_right = 792.468
+offset_bottom = -266.516
+scale = Vector2(3.08414, 2.28932)
+text = "attack_side-1
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="WarriorBlue"]
+offset_left = 696.839
+offset_top = -129.631
+offset_right = 797.839
+offset_bottom = -80.6306
+scale = Vector2(3.08414, 2.28932)
+text = "attack_side-2
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="WarriorBlue"]
+offset_left = 696.839
+offset_top = 61.1465
+offset_right = 809.839
+offset_bottom = 110.147
+scale = Vector2(3.08414, 2.28932)
+text = "attack_down-1
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="WarriorBlue"]
+offset_left = 691.468
+offset_top = 259.261
+offset_right = 804.468
+offset_bottom = 308.261
+scale = Vector2(3.08414, 2.28932)
+text = "attack_down-2
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="WarriorBlue"]
+offset_left = 696.839
+offset_top = 440.255
+offset_right = 809.839
+offset_bottom = 489.255
+scale = Vector2(3.08414, 2.28932)
+text = "attack_up-1
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="WarriorBlue"]
+offset_left = 694.154
+offset_top = 650.599
+offset_right = 807.154
+offset_bottom = 699.599
+scale = Vector2(3.08414, 2.28932)
+text = "attack_up-2
+
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="WarriorBlue"]
+offset_left = -518.0
+offset_top = -807.0
+offset_right = -434.0
+offset_bottom = -784.0
+scale = Vector2(4.81089, 4.02438)
+text = "0        1       2        3       4        5
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label10" type="Label" parent="WarriorBlue"]
+offset_left = -695.496
+offset_top = -711.745
+offset_right = -669.496
+offset_bottom = -359.745
+scale = Vector2(4.81089, 4.02438)
+text = "0        1       2        3       4        5 6  7
+"
+label_settings = SubResource("LabelSettings_k0lgf")
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" parent="." instance=ExtResource("2_ns3ar")]
+position = Vector2(292, 254)
+health = 75
+
+[node name="PawnRed" type="Sprite2D" parent="."]
+position = Vector2(-566, -627)
+texture = ExtResource("3_kenj2")
+
+[node name="GIdle" type="Sprite2D" parent="."]
+position = Vector2(657, 1089)
+texture = ExtResource("7_u4h6m")
+
+[node name="GSpawn" type="Sprite2D" parent="."]
+position = Vector2(683, 724)
+texture = ExtResource("8_txy1g")
+
+[node name="MIdle" type="Sprite2D" parent="."]
+position = Vector2(527, 1088)
+texture = ExtResource("9_0bug3")
+
+[node name="MSpawn" type="Sprite2D" parent="."]
+position = Vector2(683, 947)
+texture = ExtResource("10_bl3jb")
+
+[node name="WIdle" type="Sprite2D" parent="."]
+position = Vector2(403, 1078)
+rotation = -0.00176272
+texture = ExtResource("11_twhvk")
+
+[node name="WSpawn" type="Sprite2D" parent="."]
+position = Vector2(683, 839)
+texture = ExtResource("12_tfdef")
+
+[node name="Skull" parent="." instance=ExtResource("13_s3gtj")]
+position = Vector2(-283, 343)
+
+[node name="BannerConnectionDown" type="Sprite2D" parent="."]
+position = Vector2(-1132, 506)
+texture = ExtResource("11_mf773")
+
+[node name="BannerConnectionLeft" type="Sprite2D" parent="."]
+position = Vector2(-948, 516)
+texture = ExtResource("12_6didj")
+
+[node name="BannerConnectionRight" type="Sprite2D" parent="."]
+position = Vector2(-812, 500)
+texture = ExtResource("13_eanry")
+
+[node name="BannerConnectionUp" type="Sprite2D" parent="."]
+position = Vector2(-600, 546)
+texture = ExtResource("14_ow4wr")
+
+[node name="BannerHorizontal" type="Sprite2D" parent="."]
+position = Vector2(-419, 516)
+texture = ExtResource("15_wri1y")
+
+[node name="BannerVertical" type="Sprite2D" parent="."]
+position = Vector2(-1140, 774)
+texture = ExtResource("16_r1pu7")
+
+[node name="Carved3Slides" type="Sprite2D" parent="."]
+position = Vector2(-945, 750)
+texture = ExtResource("17_04xud")
+
+[node name="Carved9Slides" type="Sprite2D" parent="."]
+position = Vector2(-692, 754)
+texture = ExtResource("18_qhl3u")
+
+[node name="CarvedRegular" type="Sprite2D" parent="."]
+position = Vector2(-437, 759)
+texture = ExtResource("19_m4crb")
+
+[node name="RibbonRed3Slides" type="Sprite2D" parent="."]
+position = Vector2(-988, 924)
+texture = ExtResource("20_eorjy")
+
+[node name="RibbonBlue3Slides" type="Sprite2D" parent="."]
+position = Vector2(-765, 937)
+texture = ExtResource("21_irupj")
+
+[node name="RibbonYellow3Slides" type="Sprite2D" parent="."]
+position = Vector2(-513, 940)
+texture = ExtResource("22_m5jm2")
+
+[node name="Goblin" parent="." instance=ExtResource("23_ihv5i")]
+position = Vector2(836, 464)
