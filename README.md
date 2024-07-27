@@ -10,4 +10,4 @@ Texture pack and assets
 
 ## Screenshots
 
-![App Screenshot](https://cdn.discordapp.com/attachments/619506435717332993/1266903220362678376/Tiny_Swords.png?ex=66a6d711&is=66a58591&hm=130b9814a6de152f60be537f578346c5f0e428dd3df9852b902f07d6bf383000&)
+![App Screenshot](https://cdn.discordapp.com/attachments/619506435717332993/1266903846102237361/Tiny_Swords.png?ex=66a6d7a6&is=66a58626&hm=6eabb871f982f148c50cdb7933d6c661fdc527fba533815f33784a74a245e1be&)
